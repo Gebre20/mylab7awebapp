@@ -1,24 +1,23 @@
-window.onload = function(){
-
-var imageArray = [{image1: "../images/payApp.jpg"}, {image2: "../images/universityApp.jpg"},
-{image3: "../images/medicalWeb.jpg"}, {image1: "../images/insuranceApp.jpg"}];
-
-function galleryBuild(imageArray) {
-  
-    let gallery = document.getElementById("images");
-  
-    let html = "";
-  
-    imageArray.forEach(function (item) {
-      html += '<div  style="width: 18rem;">' + '<img src="' + "</div>"
-      
-    });
-  
-    gallery.innerHTML = html;
-  }
-  function randomize(arr)
-
-
-
-
+window.onload = addImages;
+function addImages(){
+  galleryBuild(imageArray);
 }
+var imageArray = [{image: "../images/payApp.jpg"},{image:"../images/universityApp.jpg"},
+{image:"../images/medicalWeb.jpg"},{image:"../images/insuranceApp.jpg"}];
+
+// function galleryBuild(arr) {
+  
+//     let gallery = document.getElementById("images");
+  
+//     let html = "";
+  
+//     arr.forEach(function (item) {
+//       html += '<div style="width: 50px; padding: 10px; gap: 5px;">' + '<img src="'  + item.image + "</div>" 
+      
+//     });
+  
+//    gallery.innerHTML = html;
+//    return gallery.innerHTML;
+//   }
+  
+
